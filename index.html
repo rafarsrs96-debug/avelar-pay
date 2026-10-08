@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avelar Pay — Painel</title>
+  <style>
+    * {box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;color:#fff;min-height:100vh;background:#15151b url('fundo.png') center 30% / cover fixed no-repeat} body:before{content:'';position:fixed;inset:0;background:linear-gradient(110deg,rgba(9,9,17,.91),rgba(12,12,20,.71) 58%,rgba(14,14,19,.49));z-index:-1} .layout{display:flex;min-height:100vh}.sidebar{width:248px;flex-shrink:0;background:rgba(10,11,20,.74);backdrop-filter:blur(20px);border-right:1px solid #ffffff1c;padding:28px 17px}.brand{display:flex;align-items:center;gap:10px;padding:4px 10px 36px;font-size:21px;font-weight:800;letter-spacing:-.7px}.brand-icon{display:grid;place-items:center;width:35px;height:35px;border-radius:11px;background:linear-gradient(145deg,#a886ff,#6538e4);font-weight:900}.brand span span{color:#b69aff}.nav-label{font-size:10px;letter-spacing:2px;color:#9d9ba9;margin:0 15px 13px;text-transform:uppercase}.nav-item{display:flex;align-items:center;gap:12px;padding:13px 15px;border-radius:12px;color:#bcb9c9;text-decoration:none;font-size:14px;margin:3px 0}.nav-item.active{color:#fff;background:#8d62f035;border:1px solid #a783ff55}.nav-item:hover{background:#ffffff14;color:white}.nav-item .symbol{width:20px;text-align:center;font-size:17px}.main{flex:1;min-width:0;padding:36px clamp(20px,4vw,64px)}.top{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.eyebrow{font-size:12px;color:#c2a9ff;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}h1{font-size:clamp(28px,4vw,39px);margin:9px 0 8px;letter-spacing:-1.3px} .sub{color:#c4c0ce;margin:0;font-size:14px}.avatar{background:#a67cff33;border:1px solid #ba9bff77;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;font-weight:700}.btn{background:#8a5cf3;color:white;border:0;border-radius:12px;padding:13px 19px;font-weight:700;cursor:pointer;font-size:13px;box-shadow:0 6px 20px #6a38ea44}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:38px}.card,.panel{background:rgba(21,19,35,.68);backdrop-filter:blur(18px);border:1px solid #ffffff2c;border-radius:19px;box-shadow:0 16px 36px #0003}.card{padding:24px}.card-head{display:flex;justify-content:space-between;align-items:center;color:#c9c4d4;font-size:13px}.card-icon{height:35px;width:35px;border-radius:11px;background:#9d71f02b;display:grid;place-items:center;color:#ccbbff;font-size:18px}.value{font-size:clamp(24px,3vw,32px);font-weight:800;letter-spacing:-1px;margin:26px 0 8px}.muted{font-size:12px;color:#c7c0d5}.pill{display:inline-flex;border-radius:30px;background:#37cf9140;color:#79ffc1;padding:5px 9px;font-size:11px;font-weight:700}.section{display:grid;grid-template-columns:1.65fr 1fr;gap:18px;margin-top:20px}.panel{padding:25px;min-height:255px}.panel h2{font-size:17px;margin:0 0 7px}.panel p{font-size:13px;color:#c7c1d1;margin:0}.bars{display:flex;align-items:end;gap:12px;height:135px;padding-top:20px}.bar{flex:1;background:linear-gradient(#ae88ff,#673fd1);opacity:.9;border-radius:7px 7px 3px 3px;min-height:12px}.days{display:flex;justify-content:space-between;color:#aea6ba;font-size:11px;margin-top:10px}.empty{display:grid;place-items:center;text-align:center;height:165px;color:#c7c1d1;font-size:13px}.dot{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#a87bff28;margin:0 auto 12px;font-size:21px}@media(max-width:930px){.sidebar{width:74px;padding:25px 11px}.brand{padding:0 8px 34px}.brand-name,.nav-label,.nav-text{display:none}.nav-item{justify-content:center;padding:13px}.cards{grid-template-columns:1fr 1fr}.section{grid-template-columns:1fr}}@media(max-width:600px){body{background-position:42% top}.layout{display:block}.sidebar{width:100%;height:68px;display:flex;align-items:center;justify-content:space-between;padding:9px 18px}.brand{padding:0}.brand-name{display:block}.sidebar nav{display:flex}.nav-item{padding:8px;margin:0 1px}.sidebar nav .nav-item:nth-child(n+3){display:none}.main{padding:27px 17px}.cards{grid-template-columns:1fr;gap:12px;margin-top:25px}.card{padding:20px}.value{margin:15px 0 6px}.section{gap:12px}.panel{padding:20px}.top .avatar{display:none}}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-icon">A</div><span class="brand-name">avelar<span>pay</span></span></div>
+      <nav>
+        <div class="nav-label">Menu principal</div>
+        <a href="#inicio" class="nav-item active"><span class="symbol">▦</span><span class="nav-text">Visão geral</span></a>
+        <a href="#transacoes" class="nav-item"><span class="symbol">⇄</span><span class="nav-text">Transações</span></a>
+        <a href="#pagamentos" class="nav-item"><span class="symbol">▣</span><span class="nav-text">Pagamentos</span></a>
+        <a href="#config" class="nav-item"><span class="symbol">⚙</span><span class="nav-text">Configurações</span></a>
+      </nav>
+    </aside>
+    <main class="main" id="inicio">
+      <div class="top"><div><div class="eyebrow">Seu painel financeiro</div><h1>Bem-vindo à Avelar Pay <span style="color:#ad8bff">✦</span></h1><p class="sub">Acompanhe suas vendas e pagamentos em um só lugar.</p></div><div class="avatar">AP</div></div>
+      <div class="cards">
+        <div class="card"><div class="card-head">Saldo disponível <span class="card-icon">◈</span></div><div class="value">R$ 0,00</div><div class="muted">Saldo atual da sua conta</div></div>
+        <div class="card"><div class="card-head">Vendas do mês <span class="card-icon">↗</span></div><div class="value">R$ 0,00</div><div class="muted">Nenhuma venda registrada</div></div>
+        <div class="card"><div class="card-head">Transações aprovadas <span class="card-icon">✓</span></div><div class="value">0</div><span class="pill">Painel demonstrativo</span></div>
+      </div>
+      <div class="section">
+        <div class="panel" id="transacoes"><h2>Resumo de vendas</h2><p>Visualização ilustrativa dos últimos 7 dias</p><div class="bars"><div class="bar" style="height:26%"></div><div class="bar" style="height:43%"></div><div class="bar" style="height:37%"></div><div class="bar" style="height:70%"></div><div class="bar" style="height:51%"></div><div class="bar" style="height:85%"></div><div class="bar" style="height:61%"></div></div><div class="days"><span>Sex</span><span>Sáb</span><span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span></div></div>
+        <div class="panel" id="pagamentos"><h2>Últimas transações</h2><p>Movimentações recentes</p><div class="empty"><div><div class="dot">⇄</div>Nenhuma transação por enquanto.</div></div></div>
+      </div>
+      <p style="font-size:11px;color:#c4bbd2;margin-top:27px">Avelar Pay · Interface demonstrativa, sem integração bancária.</p>
+    </main>
+  </div>
+</body>
+</html>
